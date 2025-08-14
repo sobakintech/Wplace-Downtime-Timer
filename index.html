@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Server Shutdown Tracker</title>
+
+  <meta property="og:title" content="WPlace shutdown timer" />
+  <meta property="og:description" content="Track the server shutdown and lockdown status in real-time on WPlace.live." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wplace.live/" />
+  <meta property="og:image" content="https://wplace.live/path/to/preview-image.png" />
+  <meta property="og:image:alt" content="WPlace shutdown timer preview" />
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+
+</head>
+<body>
+  <header id="headline">
+    WPlace.live Downtime Timer
+  </header>
+
+  <main id="container">
+    <div id="status"></div>
+    <div id="time"></div>
+    <div id="lastUpdated"></div>
+
+    <div class="controls">
+      <button id="refreshBtn">Refresh</button>
+      <button id="copyBtn" class="secondary">Copy Timestamp</button>
+    </div>
+
+    <!-- <details>
+      <summary>Notes</summary>
+      <div id="notesContent">
+        <p>Note: Servers are closed without reason.</p>
+        <p>Servers were also shut down once again!</p>
+      </div>
+    </details> -->
+
+    <!-- <section id="forum" aria-label="Submit a message to Discord">
+      <h2>Send a Message</h2>
+      <div style="margin-top: 0.5rem; font-size: 0.85rem; color: #aaa; text-align: center;">
+        May be broken for some people
+      </div>
+      <form id="discordForm">
+        <label for="headlineInput">Headline</label>
+        <input 
+          type="text" 
+          id="headlineInput" 
+          name="headline" 
+          placeholder="e.g. Hey so the servers are back, please fix it" 
+          required 
+          maxlength="100" 
+        />
+
+        <label for="contextInput">Context</label>
+        <textarea 
+          id="contextInput" 
+          name="context" 
+          placeholder="e.g. Since time" 
+          required 
+          maxlength="300"
+        ></textarea>
+
+        <label for="discordUserInput">Discord Username (optional)</label>
+        <input 
+          type="text" 
+          id="discordUserInput" 
+          name="discordUser" 
+          placeholder="e.g. @panfriedbread" 
+          maxlength="50" 
+        />
+
+        <button type="submit">Send to PFB</button>
+      </form>
+    </section> -->
+
+    <div class="status-message" id="formStatus"></div>
+  </main>
+  <div class="site-credit-container">
+  <div class="credit-left">
+    This site is an independent project and is not affiliated with, endorsed by, or connected to Wplace or its operators.
+  </div>
+  <div class="credit-right">
+    Owned by: <a href="<https://discord.com/users/1203684843339259964>">@panfriedbread on Discord</a>
+  </div>
+</div>
+</body>
+</html>
